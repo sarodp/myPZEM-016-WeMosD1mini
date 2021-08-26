@@ -1,11 +1,11 @@
-# myHTTP_ModbusRTU_StaticIP_WebOTA.ino  
+## myHTTP_ModbusRTU_StaticIP_WebOTA.ino  
 --
 9apr2021  
 psarod@gmail.com  
 Sketch 1.8.10  
 
 
-## Modbus Serial2 Wirings    
+### Modbus Serial2 Wirings    
 ```
 ESP01  
 GPIO0/GPIO2/GND ---- RX/TX/GND ttl-3v3 ---- to PZEM-016 V2  
@@ -17,19 +17,21 @@ read V,A,W,WH,Hz,PF,ALARM
 print to esp01.serial  
 
 
-## PZEM-016
+### PZEM-016
+---
 PZEM-016 + Blynk  
 
 https://solarduino.com/pzem-016-ac-energy-meter-online-monitoring-with-blynk-app/
 
-## PZEM-016 modify  
+### PZEM-016 modify  
 PZEM-ESP Modify bypass RS485 ==> TTL UART  
 
 https://github.com/Gio-dot/PZEM-016-OLED-2-OUT-ESPHome   
 https://community.home-assistant.io/t/pzem-016-with-esphome-oled-display-and-2-outputs/191409  
 
 
-## Library Modbus-esp8266 v3.0.6  
+### Library Modbus-esp8266 v3.0.6  
+---
 github ----  
 https://github.com/emelianov/modbus-esp8266  
 
@@ -50,8 +52,6 @@ https://www.gitmemory.com/emelianov
 
 ESP-01 or WEMOD D1 Mini (ESP-12) pinout
 ```
-esp-01 pin out  
-
 pinno     --- pin name  
 8 7 6 5   --- 3V3,   RST,   CH_PD, TX(1)    
 1 2 3 4   --- RX(3), GPIO0, GPIO2, GND  
@@ -61,7 +61,8 @@ GPIO2 = TX modbus software serial
 GND   = GND serial  
 ```
 
-## ElegantOTA  
+### ElegantOTA  
+---
 https://github.com/ayushsharma82/ElegantOTA  
 
 ElegantOTA provides a beautiful interface   
