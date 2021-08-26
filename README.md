@@ -1,23 +1,19 @@
-myHTTP_ModbusRTU_StaticIP_WebOTA.ino
-
-9apr2021
-
-psarod@gmail.com
-
-
-Sketch 1.8.10
+myHTTP_ModbusRTU_StaticIP_WebOTA.ino  
+==
+9apr2021  
+psarod@gmail.com  
+Sketch 1.8.10  
 
 
-Modbus Serial2 Wirings
+Modbus Serial2 Wirings    
 --
-ESP01 GPIO0/GPIO2/GND ---- RX/TX/GND ttl-3v3 ---- to PZEM-016 V2
+ESP01 
+GPIO0/GPIO2/GND ---- RX/TX/GND ttl-3v3 ---- to PZEM-016 V2  
 
-WEMOS D1 Mini 
-
-ESP12 GPIO0/GPIO2/GND ---- RX/TX/GND ttl-3v3 ---- to PZEM-016 V2 
+WEMOS D1 Mini ESP12   
+GPIO0/GPIO2/GND ---- RX/TX/GND ttl-3v3 ---- to PZEM-016 V2  
  
-read V,A,W,WH,Hz,PF,ALARM 
-
+read V,A,W,WH,Hz,PF,ALARM   
 print to esp01.serial  
 
 
@@ -60,25 +56,20 @@ https://www.gitmemory.com/emelianov
 
 
 ESP-01 or WEMOD D1 Mini (ESP-12) pinout
---
-esp-01 pin out
+--  
+esp-01 pin out  
 
-pinno     pin name
+pinno     --- pin name  
+8 7 6 5   --- 3V3,   RST,   CH_PD, TX(1)  
+1 2 3 4   --- RX(3), GPIO0, GPIO2, GND  
 
-8 7 6 5   3V3,   RST,   CH_PD, TX(1)
-
-1 2 3 4   RX(3), GPIO0, GPIO2, GND  
-
-
-GPIO0 = RX modbus software serial
-
-GPIO2 = TX modbus software serial
-
-GND   = GND serial
+GPIO0 = RX modbus software serial  
+GPIO2 = TX modbus software serial  
+GND   = GND serial  
 
 
 ElegantOTA
---
+--  
  https://github.com/ayushsharma82/ElegantOTA
 
 ElegantOTA provides a beautiful interface 
