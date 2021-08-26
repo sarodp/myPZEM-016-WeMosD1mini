@@ -1,17 +1,25 @@
 myHTTP_ModbusRTU_StaticIP_WebOTA.ino
+
 9apr2021
+
 psarod@gmail.com
+
 
 Sketch 1.8.10
 
+
 Modbus Serial2 Wirings
 --
-ESP01 GPIO0/GPIO2/GND ---- RX/TX/GND ttl-3v3 ---- to PZEM-016 V2 
+ESP01 GPIO0/GPIO2/GND ---- RX/TX/GND ttl-3v3 ---- to PZEM-016 V2
+
 WEMOS D1 Mini 
+
 ESP12 GPIO0/GPIO2/GND ---- RX/TX/GND ttl-3v3 ---- to PZEM-016 V2 
  
 read V,A,W,WH,Hz,PF,ALARM 
+
 print to esp01.serial  
+
 
 PZEM-016
 --
